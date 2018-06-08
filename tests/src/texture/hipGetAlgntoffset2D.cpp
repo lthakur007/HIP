@@ -78,8 +78,6 @@ hipMallocArray(&hipArray, &chan_desc,C,R,0);
 
 hipMemcpyToArray(hipArray,0,0, val, R*C*sizeof(int), hipMemcpyHostToDevice);
 
-
-
 tex.addressMode[0]=hipAddressModeWrap;
 tex.addressMode[1]=hipAddressModeWrap;
 tex.filterMode=hipFilterModePoint;
